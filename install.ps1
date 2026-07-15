@@ -14,7 +14,7 @@ function Require-Command {
 
     $command = Get-Command $Name -ErrorAction SilentlyContinue
     if (-not $command) {
-        throw "未找到 $Name。$InstallHint"
+        throw "$Name was not found. $InstallHint"
     }
     return $command.Source
 }
@@ -24,23 +24,45 @@ function Invoke-Codex {
 
     & $script:CodexPath @Arguments
     if ($LASTEXITCODE -ne 0) {
-        throw "Codex 命令执行失败（退出码 $LASTEXITCODE）：codex $($Arguments -join ' ')"
+        $exitCode = $LASTEXITCODE
+        throw "Codex command failed (exit code $exitCode): codex $($Arguments -join ' ')"
     }
 }
 
-$script:CodexPath = Require-Command -Name "codex" -InstallHint "请先安装或更新 Codex 桌面版：https://openai.com/codex/"
-$null = Require-Command -Name "git" -InstallHint "请先安装 Git：https://git-scm.com/downloads"
+$script:CodexPath = Require-Command -Name "codex" -InstallHint "Install or update Codex first: https://openai.com/codex/"
+$null = Require-Command -Name "git" -InstallHint "Install Git first: https://git-scm.com/downloads"
 
-Write-Host "正在添加公开插件源：$Repository"
-& $script:CodexPath plugin marketplace add $Repository --ref main --json
-if ($LASTEXITCODE -ne 0) {
-    Write-Host "插件源可能已经添加，正在刷新：$Marketplace"
-    Invoke-Codex plugin marketplace upgrade $Marketplace
+if ($env:CODEX_HOME -and -not (Test-Path -LiteralPath $env:CODEX_HOME)) {
+    New-Item -ItemType Directory -Path $env:CODEX_HOME -Force | Out-Null
 }
 
-Write-Host "正在安装插件：$Plugin@$Marketplace"
+# Keep Git's Windows long-path support local to this installer process.
+$gitConfigIndex = 0
+if ($env:GIT_CONFIG_COUNT -match '^\d+$') {
+    $gitConfigIndex = [int]$env:GIT_CONFIG_COUNT
+}
+[Environment]::SetEnvironmentVariable("GIT_CONFIG_KEY_$gitConfigIndex", "core.longpaths", "Process")
+[Environment]::SetEnvironmentVariable("GIT_CONFIG_VALUE_$gitConfigIndex", "true", "Process")
+$env:GIT_CONFIG_COUNT = [string]($gitConfigIndex + 1)
+
+$marketplaceJson = & $script:CodexPath plugin marketplace list --json
+if ($LASTEXITCODE -ne 0) {
+    throw "Unable to read configured Codex marketplaces."
+}
+$marketplaceState = ($marketplaceJson -join [Environment]::NewLine) | ConvertFrom-Json
+$marketplaceExists = @($marketplaceState.marketplaces | ForEach-Object { $_.name }) -contains $Marketplace
+
+if ($marketplaceExists) {
+    Write-Host "Refreshing marketplace: $Marketplace"
+    Invoke-Codex plugin marketplace upgrade $Marketplace
+} else {
+    Write-Host "Adding public plugin marketplace: $Repository"
+    Invoke-Codex plugin marketplace add $Repository --ref main --json
+}
+
+Write-Host "Installing plugin: $Plugin@$Marketplace"
 Invoke-Codex plugin add "$Plugin@$Marketplace" --json
 
 Write-Host ""
-Write-Host "安装完成。请关闭当前任务，并在 Codex 中新建任务后使用插件。" -ForegroundColor Green
-Write-Host "推荐首条提示词：使用 `$mining-rock-co2-paper-lifecycle 创建或接管一个论文项目。"
+Write-Host "Installation complete. Start a new Codex task before using the plugin." -ForegroundColor Green
+Write-Host 'Suggested prompt: Use $mining-rock-co2-paper-lifecycle to create or resume a paper project.'
