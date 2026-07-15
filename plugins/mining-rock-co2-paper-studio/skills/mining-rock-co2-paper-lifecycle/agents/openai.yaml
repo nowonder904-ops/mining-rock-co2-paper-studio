@@ -1,0 +1,4 @@
+interface:
+  display_name: "采矿—岩石力学—CO₂论文全流程"
+  short_description: "面向采矿岩石力学与二氧化碳封存的独立证据驱动论文全流程"
+  default_prompt: "使用 $mining-rock-co2-paper-lifecycle 从论文库状态断点恢复，并按人工闸门推进当前阶段。"

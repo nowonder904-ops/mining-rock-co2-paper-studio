@@ -1,0 +1,18 @@
+{
+  "resultList": {
+    "result": [
+      {
+        "id": "EPMC-FIXTURE-1",
+        "source": "MED",
+        "pmcid": "PMC0000001",
+        "doi": "10.3000/geochemistry-fixture",
+        "title": "Geochemical alteration during CO2 brine rock interaction",
+        "pubYear": "2024",
+        "journalTitle": "Geochemistry Fixture",
+        "authorString": "Wang H; Xu Y",
+        "abstractText": "Offline Europe PMC fixture.",
+        "citedByCount": 4
+      }
+    ]
+  }
+}

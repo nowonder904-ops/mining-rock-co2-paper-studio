@@ -1,0 +1,39 @@
+{
+  "name": "mining-rock-co2-paper-studio",
+  "version": "0.2.0+codex.20260713042148",
+  "description": "\u9762\u5411\u91c7\u77ff\u5de5\u7a0b\u3001\u5ca9\u77f3\u529b\u5b66\u4e0e CO\u2082 \u5730\u8d28\u5c01\u5b58\u8bba\u6587\u7684\u72ec\u7acb\u8bc1\u636e\u9a71\u52a8\u5168\u6d41\u7a0b\u63d2\u4ef6\u3002",
+  "author": {
+    "name": "nowonder904-ops",
+    "url": "https://github.com/nowonder904-ops"
+  },
+  "homepage": "https://github.com/nowonder904-ops/mining-rock-co2-paper-studio#readme",
+  "repository": "https://github.com/nowonder904-ops/mining-rock-co2-paper-studio",
+  "keywords": [
+    "mining-engineering",
+    "rock-mechanics",
+    "co2-storage",
+    "academic-writing",
+    "obsidian"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "\u91c7\u77ff\u00b7\u5ca9\u77f3\u529b\u5b66\u00b7CO\u2082 \u8bba\u6587\u5de5\u4f5c\u5ba4",
+    "shortDescription": "\u72ec\u7acb\u5b8c\u6210\u6587\u732e\u3001\u8bc1\u636e\u5e93\u3001\u5199\u4f5c\u3001\u56fe\u4ef6\u3001\u6295\u7a3f\u4e0e\u4fee\u56de\u3002",
+    "longDescription": "\u4e3a\u91c7\u77ff\u5de5\u7a0b\u3001\u5ca9\u77f3\u529b\u5b66\u548c CO\u2082 \u5730\u8d28\u5c01\u5b58\u8bba\u6587\u63d0\u4f9b\u5355\u5165\u53e3\u3001\u53ef\u6062\u590d\u3001\u5e26\u4eba\u5de5\u95f8\u95e8\u7684\u5168\u751f\u547d\u5468\u671f\u5de5\u4f5c\u6d41\u3002\u63d2\u4ef6\u5185\u7f6e\u7814\u7a76\u95ee\u9898\u6838\u9a8c\u3001\u591a\u6e90\u6587\u732e\u68c0\u7d22\u3001\u5408\u6cd5\u5168\u6587\u83b7\u53d6\u4e0e\u4eba\u5de5\u8865\u5168\u6682\u505c\u3001Mode B \u5206\u7ea7\u7cbe\u8bfb\u3001Obsidian \u8bc1\u636e\u5e93\u3001\u7efc\u8ff0\u4e0e\u8bba\u6587\u5199\u4f5c\u3001\u79d1\u7814\u6570\u636e\u56fe\u3001\u673a\u5236\u56fe\u63d0\u793a\u8bcd\u3001\u8bed\u8a00\u4e0d\u53d8\u91cf\u5ba1\u8ba1\u3001\u6295\u7a3f\u4ea4\u4ed8\u548c\u5ba1\u7a3f\u56de\u590d\u80fd\u529b\uff1b\u4e0d\u518d\u5b89\u88c5\u6216\u4f9d\u8d56\u4efb\u4f55\u65e7\u7248\u5168\u5c40 SKILL\u3002",
+    "developerName": "nowonder904-ops",
+    "category": "Productivity",
+    "capabilities": [
+      "Standalone academic research workflow",
+      "Literature search and full-text recovery gates",
+      "Obsidian evidence vault",
+      "Stage-gated manuscript writing",
+      "Scientific figures and delivery audits",
+      "Reviewer response traceability"
+    ],
+    "defaultPrompt": [
+      "\u7528 $mining-rock-co2-paper-lifecycle \u63a5\u7ba1\u8bba\u6587\u5e93\u5e76\u4ece\u65ad\u70b9\u7ee7\u7eed\u3002",
+      "\u6838\u9a8c\u7814\u7a76\u95ee\u9898\u5e76\u5efa\u7acb\u53ef\u590d\u73b0\u7684\u6587\u732e\u68c0\u7d22\u65b9\u6848\u3002",
+      "\u68c0\u67e5\u8bc1\u636e\u94fe\u3001\u6570\u636e\u56fe\u548c\u6295\u7a3f\u5305\u662f\u5426\u8fbe\u5230\u4e0b\u4e00\u9636\u6bb5\u3002"
+    ]
+  }
+}

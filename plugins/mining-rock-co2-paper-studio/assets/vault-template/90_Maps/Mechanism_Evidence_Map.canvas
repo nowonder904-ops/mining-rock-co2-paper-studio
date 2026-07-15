@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "mechanism-root",
+      "type": "text",
+      "text": "机制—证据地图：待 Mode B 精读后回写",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 160
+    }
+  ],
+  "edges": []
+}

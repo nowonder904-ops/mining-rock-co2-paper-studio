@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <title>Offline arXiv fixture</title>
+  <entry>
+    <id>https://arxiv.org/abs/2501.00001</id>
+    <published>2025-01-02T00:00:00Z</published>
+    <updated>2025-01-02T00:00:00Z</updated>
+    <title>Numerical fixture for coupled seepage and damage</title>
+    <summary>Offline arXiv XML fixture for the standalone search test.</summary>
+    <author><name>Fixture Author</name></author>
+    <link href="https://arxiv.org/abs/2501.00001" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.00001" rel="related" type="application/pdf" title="pdf"/>
+  </entry>
+</feed>

@@ -1,0 +1,23 @@
+{
+  "message": {
+    "items": [
+      {
+        "DOI": "10.1000/shared-fixture",
+        "title": ["Coupled CO2 storage response in a deep coal specimen"],
+        "author": [
+          {"given": "Lin", "family": "Zhao"},
+          {"given": "Ming", "family": "Chen"}
+        ],
+        "published": {"date-parts": [[2025, 3, 1]]},
+        "container-title": ["International Journal of Mining Science Fixture"],
+        "URL": "https://doi.org/10.1000/shared-fixture",
+        "type": "journal-article",
+        "is-referenced-by-count": 12,
+        "link": [
+          {"URL": "https://example.invalid/shared-fixture.pdf", "content-type": "application/pdf"}
+        ],
+        "abstract": "<jats:p>Fixture abstract for an offline search test.</jats:p>"
+      }
+    ]
+  }
+}

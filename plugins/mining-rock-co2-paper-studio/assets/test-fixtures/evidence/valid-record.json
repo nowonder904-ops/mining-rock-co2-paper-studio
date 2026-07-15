@@ -1,0 +1,43 @@
+{
+  "paper_id": "{{PAPER_ID}}",
+  "summary": "The fixture paper reports a bounded laboratory-scale response.",
+  "research_question": "How does the prescribed condition affect the measured sandstone response?",
+  "methods": {
+    "material": "saturated sandstone specimen",
+    "loading": "triaxial loading under a stated confining pressure"
+  },
+  "results": [
+    "The measured response increased within the reported fixture range."
+  ],
+  "limitations": [
+    "Laboratory core scale only; no field-scale causal claim is made."
+  ],
+  "topics": [
+    "岩石力学",
+    "CO2封存"
+  ],
+  "figures_tables": [
+    "Fig. 2 is the source anchor used by the fixture evidence."
+  ],
+  "citation_use": "Use only for the bounded laboratory observation recorded below.",
+  "evidence": [
+    {
+      "evidence_id": "E-{{PAPER_ID}}-001",
+      "claim_id": "C-FIXTURE-001",
+      "claim_text": "The measured response increased under the stated laboratory condition.",
+      "claim_type": "experiment",
+      "source_locator": "p. 3, Fig. 2",
+      "evidence_type": "direct-result",
+      "object": "saturated sandstone specimen",
+      "scale": "laboratory core",
+      "conditions": "10 MPa confining pressure; prescribed saturation state",
+      "direction": "increase",
+      "magnitude_or_range": "5-8% fixture range",
+      "support_grade": "strong",
+      "limitations": "Does not establish field-scale or long-term behavior.",
+      "counterevidence": "",
+      "figure_table_ids": "Fig. 2",
+      "manuscript_locations": "Results"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "id": "https://openalex.org/W-FIXTURE-SHARED",
+      "doi": "https://doi.org/10.1000/shared-fixture",
+      "display_name": "Coupled CO2 storage response in a deep coal specimen",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 21,
+      "primary_location": {
+        "landing_page_url": "https://example.invalid/shared-fixture",
+        "source": {"display_name": "International Journal of Mining Science Fixture"}
+      },
+      "best_oa_location": {
+        "pdf_url": "https://example.invalid/shared-fixture-open.pdf",
+        "landing_page_url": "https://example.invalid/shared-fixture-open"
+      },
+      "authorships": [
+        {"author": {"display_name": "Lin Zhao"}},
+        {"author": {"display_name": "Ming Chen"}}
+      ],
+      "abstract_inverted_index": {
+        "Offline": [0],
+        "fixture": [1],
+        "abstract": [2]
+      }
+    },
+    {
+      "id": "https://openalex.org/W-FIXTURE-ROCK",
+      "doi": "https://doi.org/10.2000/rock-fixture",
+      "display_name": "Triaxial failure response of saturated sandstone",
+      "publication_year": 2024,
+      "type": "article",
+      "cited_by_count": 8,
+      "primary_location": {
+        "landing_page_url": "https://example.invalid/rock-fixture",
+        "source": {"display_name": "Rock Mechanics Fixture"}
+      },
+      "best_oa_location": null,
+      "authorships": [
+        {"author": {"display_name": "Qiang Li"}}
+      ],
+      "abstract_inverted_index": {
+        "Sandstone": [0],
+        "fixture": [1]
+      }
+    }
+  ]
+}

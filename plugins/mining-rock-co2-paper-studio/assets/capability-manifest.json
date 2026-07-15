@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "architecture": "single-skill-progressive-disclosure",
+  "global_skill_dependencies": [],
+  "capabilities": [
+    {"id": "project-control", "stages": ["S0", "S1", "S13"], "modules": ["scripts/stage_control.py", "scripts/pipeline_status.py", "scripts/migrate_vault.py"], "external_runtime": "python-stdlib"},
+    {"id": "rq-innovation-reviewer-challenge", "stages": ["S2"], "modules": ["skills/mining-rock-co2-paper-lifecycle/references/research-search-playbook.md", "scripts/validate_stage_outputs.py"], "external_runtime": "model-reasoning"},
+    {"id": "multisource-literature-search", "stages": ["S3", "S4"], "modules": ["scripts/scholarly_search.py", "scripts/literature_register.py"], "external_runtime": "network-and-public-scholarly-apis"},
+    {"id": "legal-fulltext-and-manual-gate", "stages": ["S4", "S4.5"], "modules": ["scripts/fulltext_fetch.py", "scripts/download_failure_gate.py"], "external_runtime": "network-and-user-access-rights"},
+    {"id": "dedup-version-classification", "stages": ["S5"], "modules": ["scripts/literature_register.py"], "external_runtime": "python-stdlib"},
+    {"id": "mode-b-user-grading", "stages": ["S5.5"], "modules": ["scripts/mode_b_manager.py"], "external_runtime": "explicit-user-input"},
+    {"id": "deep-reading-evidence-vault", "stages": ["S6"], "modules": ["scripts/pdf_text_extract.py", "scripts/evidence_vault.py", "scripts/validate_obsidian_assets.py"], "external_runtime": "host-pdf-reading-or-local-pdf-parser"},
+    {"id": "literature-review-and-gap", "stages": ["S7"], "modules": ["skills/mining-rock-co2-paper-lifecycle/references/evidence-vault-playbook.md", "scripts/claim_evidence_audit.py"], "external_runtime": "model-reasoning"},
+    {"id": "contribution-and-manuscript-spine", "stages": ["S8", "S9"], "modules": ["scripts/build_manuscript_context.py", "skills/mining-rock-co2-paper-lifecycle/references/manuscript-playbook.md"], "external_runtime": "model-reasoning"},
+    {"id": "section-writing-and-consistency", "stages": ["S10"], "modules": ["scripts/manuscript_guard.py", "skills/mining-rock-co2-paper-lifecycle/references/manuscript-playbook.md"], "external_runtime": "model-reasoning"},
+    {"id": "data-figures", "stages": ["S10.5"], "modules": ["scripts/figure_engine.py", "scripts/validate_figure_stage.py"], "external_runtime": "matplotlib-numpy-pillow"},
+    {"id": "mechanism-prompts-and-placeholders", "stages": ["S10.5"], "modules": ["scripts/mechanism_figure.py"], "external_runtime": "python-stdlib-and-model-reasoning"},
+    {"id": "academic-polish-and-author-voice", "stages": ["S11"], "modules": ["scripts/manuscript_guard.py", "skills/mining-rock-co2-paper-lifecycle/references/manuscript-playbook.md"], "external_runtime": "model-reasoning"},
+    {"id": "citation-evidence-review-audit", "stages": ["S12"], "modules": ["scripts/claim_evidence_audit.py", "scripts/manuscript_guard.py"], "external_runtime": "python-stdlib-and-model-reasoning"},
+    {"id": "data-availability-and-delivery", "stages": ["S13"], "modules": ["scripts/delivery_build.py", "skills/mining-rock-co2-paper-lifecycle/references/review-delivery-playbook.md"], "external_runtime": "python-docx-or-stdlib; pdf-needs-pandoc-and-tex-or-explicitly-authorized-microsoft-word"},
+    {"id": "reviewer-response-traceability", "stages": ["S14"], "modules": ["scripts/review_response_audit.py", "skills/mining-rock-co2-paper-lifecycle/references/review-delivery-playbook.md"], "external_runtime": "python-stdlib-and-explicit-reviewer-comments"}
+  ]
+}

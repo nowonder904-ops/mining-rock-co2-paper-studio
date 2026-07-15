@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.folder.startsWith("05_Knowledge")
+    - note.evidence_status == "gap"
+properties:
+  note.claim_id:
+    displayName: 主张 ID
+  note.evidence_status:
+    displayName: 证据状态
+  note.risk:
+    displayName: 风险
+views:
+  - type: table
+    name: 证据缺口
+    order:
+      - file.name
+      - note.claim_id
+      - note.risk

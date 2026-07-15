@@ -1,0 +1,13 @@
+confining_pressure,permeability,lithology
+5,1.82,sandstone
+10,1.56,sandstone
+15,1.31,sandstone
+20,1.12,sandstone
+25,0.98,sandstone
+30,0.89,sandstone
+5,1.35,shale
+10,1.20,shale
+15,1.08,shale
+20,0.97,shale
+25,0.90,shale
+30,0.84,shale

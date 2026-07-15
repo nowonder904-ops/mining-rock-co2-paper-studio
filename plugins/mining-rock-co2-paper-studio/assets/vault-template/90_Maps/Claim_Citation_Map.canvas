@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "claim-root",
+      "type": "text",
+      "text": "主张—引用地图：待论文骨架形成后回写",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 160
+    }
+  ],
+  "edges": []
+}

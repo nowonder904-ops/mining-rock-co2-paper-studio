@@ -1,0 +1,20 @@
+{
+  "name": "nowonder-academic",
+  "interface": {
+    "displayName": "Nowonder Academic"
+  },
+  "plugins": [
+    {
+      "name": "mining-rock-co2-paper-studio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mining-rock-co2-paper-studio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

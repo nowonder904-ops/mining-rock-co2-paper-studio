@@ -1,0 +1,29 @@
+%PDF-1.4
+% Offline fixture: this is only a minimum structural payload for the plugin gate test.
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 96 >>
+stream
+BT /F1 12 Tf 20 100 Td (Offline minimum PDF fixture for structural validation only.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Producer (mining-rock-co2-paper-studio self test) /Title (Fixture PDF) >>
+endobj
+% Padding keeps the fixture above the gate's 512-byte minimum without pretending this is a publication.
+% 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+% 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+% 2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+trailer
+<< /Root 1 0 R /Size 6 >>
+startxref
+0
+%%EOF

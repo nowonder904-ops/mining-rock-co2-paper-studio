@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "definitions": {},
+  "definitions_mode": "pending",
+  "batch_limit": null,
+  "figure_table_level": null,
+  "batch_id": "",
+  "user_confirmed": false,
+  "confirmed_by": "",
+  "confirmed_at": "",
+  "note": ""
+}

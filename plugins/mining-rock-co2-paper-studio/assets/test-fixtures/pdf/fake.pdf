@@ -1,0 +1,1 @@
+<html><head><title>Not a PDF</title></head><body>This file deliberately has a .pdf suffix but an HTML payload, so the S4.5 structural gate must reject it.</body></html>

@@ -1,0 +1,24 @@
+{
+  "paper_id": "{{PAPER_ID}}",
+  "summary": "Negative fixture record.",
+  "research_question": "Negative fixture question.",
+  "methods": "Negative fixture method.",
+  "results": "Negative fixture result.",
+  "limitations": "Negative fixture limitation.",
+  "topics": ["negative-fixture"],
+  "evidence": [
+    {
+      "evidence_id": "E-INVALID-001",
+      "claim_id": "C-INVALID-001",
+      "claim_text": "This unsupported claim must be rejected.",
+      "claim_type": "experiment",
+      "source_locator": "abstract only",
+      "evidence_type": "direct-result",
+      "object": "sandstone",
+      "scale": "laboratory",
+      "conditions": "unspecified",
+      "support_grade": "strong",
+      "limitations": ""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.folder.startsWith("04_Reading/Notes")
+properties:
+  file.name:
+    displayName: 文献笔记
+  note.year:
+    displayName: 年份
+  note.domain:
+    displayName: 领域
+  note.fulltext_status:
+    displayName: 全文状态
+views:
+  - type: table
+    name: 文献总览
+    order:
+      - file.name
+      - note.year
+      - note.domain
+      - note.fulltext_status

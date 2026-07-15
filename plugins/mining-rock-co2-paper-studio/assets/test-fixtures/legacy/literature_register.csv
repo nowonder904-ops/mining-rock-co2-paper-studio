@@ -1,0 +1,2 @@
+paper_id,title,year,doi,journal,authors,domain,source_type,source_url,screening_status,fulltext_status,pdf_path,download_error,suggested_grade,confirmed_grade,reading_status,evidence_status,topics,added_at,notes
+P-LEGACY001,Legacy schema fixture paper,2020,10.9000/legacy-fixture,Legacy Journal,Legacy Author,rock-mechanics,journal,https://example.invalid/legacy,candidate,unknown,,,,,not-started,not-started,legacy,2026-01-01,legacy row must survive migration

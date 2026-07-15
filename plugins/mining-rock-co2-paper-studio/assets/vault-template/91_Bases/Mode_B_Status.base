@@ -1,0 +1,20 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.folder.startsWith("04_Reading/Notes")
+    - note.mode_b_grade != null
+properties:
+  note.mode_b_grade:
+    displayName: Mode B 等级
+  note.reading_status:
+    displayName: 精读状态
+  note.evidence_status:
+    displayName: 证据状态
+views:
+  - type: table
+    name: Mode B 进度
+    order:
+      - file.name
+      - note.mode_b_grade
+      - note.reading_status
+      - note.evidence_status

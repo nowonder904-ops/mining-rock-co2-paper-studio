@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "workflow": "mining-rock-co2-paper-lifecycle",
+  "workflow_architecture": "standalone",
+  "vault_name": "",
+  "vault_path": "",
+  "created": "",
+  "updated": "",
+  "current_stage": "S0",
+  "stages": {},
+  "blockers": {},
+  "stage_runs": {}
+}

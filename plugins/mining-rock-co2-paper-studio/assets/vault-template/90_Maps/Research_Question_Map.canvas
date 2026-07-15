@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "rq-root",
+      "type": "text",
+      "text": "研究问题：待 S1 完成后更新",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 160
+    }
+  ],
+  "edges": []
+}
